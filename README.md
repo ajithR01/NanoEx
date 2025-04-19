@@ -6,9 +6,7 @@ NanoEx is a simple, UI-focused frontend project built using **React** and **Tail
 
 ## 📸 Demo
 
-[Live Demo](https://your-live-link.com)  
-*(Optional)*  
-![Screenshot](./path-to-screenshot.png)
+[Live Demo] https://nano-ex-dmpe.vercel.app/
 
 ---
 
@@ -17,9 +15,9 @@ NanoEx is a simple, UI-focused frontend project built using **React** and **Tail
 - Fast and responsive UI
 - Modular component structure
 - Tailwind CSS for styling
-- React Router for navigation *(if applicable)*
-- Deployed on Vercel/Netlify *(if applicable)*
-- Jest & React Testing Library for unit testing *(if applicable)*
+- React Router for navigation
+- Deployed on Vercel/Netlify
+- Jest & React Testing Library for unit testing
 
 ---
 
@@ -29,6 +27,8 @@ NanoEx is a simple, UI-focused frontend project built using **React** and **Tail
 - **Tailwind CSS**
 - **Vite**
 - **JavaScript**
+- **Vercel**
+- **Git**
 
 ---
 
