@@ -9,6 +9,39 @@ import CreditCardIcon from "../assets/NanoExRWAImages/Rectangle _2_from_NanoEX.p
 
 import BenefitCard from "./BenefitCard";
 
+const cards = [
+  {
+    title: "Up to 50%",
+    subtitle: "Fee Discounts",
+    description: "Reduced trading, tokenization, and custody fees.",
+    icon: PercentIcon,
+  },
+  {
+    title: "Governance &",
+    subtitle: "Voting Rights",
+    description: "Influence platform upgrades, fees, and asset listings.",
+    icon: VoteIcon,
+  },
+  {
+    title: "Exclusive",
+    subtitle: "Investment Access",
+    description: "Early participation in premium tokenized assets.",
+    icon: ChartIcon,
+  },
+  {
+    title: "Staking",
+    subtitle: "& Rewards",
+    description: "Earn high APY staking rewards and platform incentives.",
+    icon: LayersIcon,
+  },
+  {
+    title: "Global",
+    subtitle: "Crypto Card",
+    description: "Use tokenized assets for real-world transactions.",
+    icon: CreditCardIcon,
+  },
+];
+
 export default function NanoExRWA() {
   return (
     <div className="w-full bg-black text-white">
@@ -36,41 +69,16 @@ export default function NanoExRWA() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 max-w-7xl mx-auto px-4">
-        <BenefitCard
-          title="Up to 50%"
-          subtitle="Fee Discounts"
-          description="Reduced trading, tokenization, and custody fees."
-          icon={PercentIcon}
-          gradientColor={true}
-        />
-
-        <BenefitCard
-          title="Governance &"
-          subtitle="Voting Rights"
-          description="Influence platform upgrades, fees, and asset listings."
-          icon={VoteIcon}
-        />
-
-        <BenefitCard
-          title="Exclusive"
-          subtitle="Investment Access"
-          description="Early participation in premium tokenized assets."
-          icon={ChartIcon}
-        />
-
-        <BenefitCard
-          title="Staking"
-          subtitle="& Rewards"
-          description="Earn high APY staking rewards and platform incentives."
-          icon={LayersIcon}
-        />
-
-        <BenefitCard
-          title="Global"
-          subtitle="Crypto Card"
-          description="Use tokenized assets for real-world transactions."
-          icon={CreditCardIcon}
-        />
+        {cards.map((card, i) => (
+          <BenefitCard
+            key={i}
+            title={card.title}
+            subtitle={card.subtitle}
+            description={card.description}
+            icon={card.icon}
+            gradientColor={i == 0 ? true : false}
+          />
+        ))}
       </div>
 
       <div className="max-w-4xl mx-auto text-center mt-16 px-4">
